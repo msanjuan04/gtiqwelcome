@@ -1,0 +1,30 @@
+# GTiQ
+
+> GTiQ es un software SaaS B2B de control horario y fichaje digital para pymes españolas. Cumple el Real Decreto-ley 8/2019, no usa biometría (alineado con la doctrina de la AEPD), aloja datos en servidores de la Unión Europea y se desarrolla desde el Maresme (Mataró, Barcelona) por GNERAI.
+
+## Producto
+
+- [Página principal](https://welcome.gneraitiq.com/) — descripción, ventajas y CTA.
+- [Funcionalidades](https://welcome.gneraitiq.com/#producto) — fichaje multidispositivo (móvil, web, tablet kiosco, QR), geofencing, vacaciones, ausencias, turnos, informes para Inspección.
+- [Precios](https://welcome.gneraitiq.com/#precios) — planes anuales sin pago por usuario, desde 149 €/año (1–5 trabajadores) hasta plan a consultar para más de 50.
+- [Calculadora de ahorro](https://welcome.gneraitiq.com/#ahorro) — comparación interactiva de coste anual de GTiQ frente a Sesame HR, Factorial y Bizneo según número de empleados.
+
+## Cumplimiento legal
+
+- [Cómo cumple GTiQ el RD 8/2019](https://welcome.gneraitiq.com/#ley) — checklist con lo que exige la normativa y cómo lo resuelve la plataforma punto por punto.
+- [Política de privacidad](https://welcome.gneraitiq.com/legal/privacidad) — finalidades, base jurídica, datos tratados (incluido NFC y vinculación de dispositivo), conservación 4 años, derechos de las personas y textos de consentimiento.
+- [Política de cookies](https://welcome.gneraitiq.com/legal/cookies) — solo cookies esenciales; sin tracking comportamental ni publicidad.
+- [Aviso legal](https://welcome.gneraitiq.com/legal/aviso-legal) — responsable del tratamiento, finalidad de la plataforma, titularidad y jurisdicción.
+
+## Diferenciadores clave
+
+- Sin biometría → cero riesgo de sanción AEPD (multa documentada de hasta 220.000 €).
+- Pago anual fijo, sin tarifa por usuario ni mínimos mensuales, frente a competidores que cobran 5–8 €/empleado/mes.
+- Servidores en el EEE, cifrado en tránsito y reposo, copias de seguridad diarias.
+- Log inmutable con marca de tiempo verificable para Inspección.
+- Soporte y desarrollo en España (catalán y castellano).
+
+## Optional
+
+- [Contacto](mailto:hola@gneraitiq.com) — hola@gneraitiq.com
+- [GNERAI](https://gnerai.com) — empresa desarrolladora con sede en Barcelona / Mataró.
