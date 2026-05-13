@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 import {
   Globe2,
@@ -87,13 +88,19 @@ const Shield: Mark = ({ className }) => (
 
 type Client = {
   name: string
-  mark: Mark
+  mark?: Mark
+  /** Si se define, se renderiza la imagen en lugar del par marca+nombre */
+  logo?: { src: string; width: number; height: number }
   /** "Empresa colaboradora" se muestra como pill bajo el nombre */
   partner?: boolean
 }
 
 const CLIENTS: Client[] = [
-  { name: "Sintelec", mark: Bars, partner: true },
+  {
+    name: "Sintelec",
+    logo: { src: "/images/sintelec-logo.png", width: 800, height: 191 },
+    partner: true,
+  },
 ]
 
 export function LogoCloud() {
@@ -117,17 +124,27 @@ export function LogoCloud() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8"
         >
-          {CLIENTS.map(({ name, mark: Mark, partner }) => (
+          {CLIENTS.map(({ name, mark: Mark, logo, partner }) => (
             <div
               key={name}
-              className="flex flex-col items-center gap-1.5 text-zinc-400 hover:text-white transition-colors"
+              className="flex flex-col items-center gap-2.5 text-zinc-400 hover:text-white transition-colors"
             >
-              <div className="flex items-center gap-2.5">
-                <Mark className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
-                <span className="text-base sm:text-lg font-medium tracking-tight leading-tight">
-                  {name}
-                </span>
-              </div>
+              {logo ? (
+                <Image
+                  src={logo.src}
+                  alt={name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="h-10 sm:h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                />
+              ) : (
+                <div className="flex items-center gap-2.5">
+                  {Mark && <Mark className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />}
+                  <span className="text-base sm:text-lg font-medium tracking-tight leading-tight">
+                    {name}
+                  </span>
+                </div>
+              )}
               {partner && (
                 <span className="text-[10px] uppercase tracking-[0.12em] text-blue-300 bg-blue-500/10 border border-blue-500/30 rounded-full px-2 py-0.5">
                   Empresa colaboradora

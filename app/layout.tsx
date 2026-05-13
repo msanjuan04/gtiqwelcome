@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CookieBanner } from '@/components/cookie-banner'
+import { WhatsAppButton } from '@/components/whatsapp-button'
 import {
   LocalBusinessSchema,
   OrganizationSchema,
@@ -113,6 +114,7 @@ fbq('track', 'PageView');`}
           />
         </noscript>
         {children}
+        <WhatsAppButton />
         <CookieBanner />
         <OrganizationSchema />
         <WebSiteSchema />

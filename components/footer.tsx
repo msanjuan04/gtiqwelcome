@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Logo } from "./logo"
 import { NewsletterForm } from "./newsletter-form"
 
@@ -93,9 +94,26 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between text-xs text-zinc-500">
-          <span>© 2026 GTiQ — Powered by GNERAI</span>
-          <span>Hecho en Barcelona / Mataró</span>
+        <div className="mt-12 pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between text-xs text-zinc-500">
+          <span>Powered by GNERAI</span>
+          <a
+            href="https://sintelec.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 group"
+            aria-label="Sintelec — empresa colaboradora"
+          >
+            <span className="text-[11px] uppercase tracking-wider text-zinc-500 group-hover:text-zinc-300 transition-colors">
+              Empresa colaboradora
+            </span>
+            <Image
+              src="/images/sintelec-logo.png"
+              alt="Sintelec"
+              width={800}
+              height={191}
+              className="h-8 w-auto opacity-80 group-hover:opacity-100 transition-opacity"
+            />
+          </a>
         </div>
       </div>
     </footer>

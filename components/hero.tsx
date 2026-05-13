@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Check } from "lucide-react"
 import { DashboardMockup } from "./dashboard-mockup"
+import { HeroPanels } from "./hero-panels"
 
 export function Hero() {
   const [yOffset, setYOffset] = useState(0)
@@ -53,16 +54,16 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl sm:text-5xl lg:text-[64px] font-medium text-white leading-[1.05] tracking-tight"
+              className="text-[30px] sm:text-5xl lg:text-[64px] font-medium text-white leading-[1.15] sm:leading-[1.1] lg:leading-[1.05] tracking-tight text-balance"
             >
               Control horario que{" "}
-              <span className="bg-gradient-to-r from-blue-200 via-blue-300 to-blue-500 bg-clip-text text-transparent">
+              <span className="inline-block bg-gradient-to-r from-blue-200 via-blue-300 to-blue-500 bg-clip-text text-transparent pb-[0.12em] [white-space:nowrap]">
                 cumple la ley
               </span>
               .
               <br className="hidden sm:block" />{" "}
               <span className="text-zinc-400">Sin sorpresas.</span>{" "}
-              <span className="relative inline-block">
+              <span className="relative inline-block [white-space:nowrap]">
                 <span className="relative z-10">Sin pagar por usuario.</span>
                 <span
                   aria-hidden="true"
@@ -188,6 +189,8 @@ export function Hero() {
             />
           </div>
         </div>
+
+        <HeroPanels />
       </div>
     </section>
   )
